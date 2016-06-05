@@ -4,8 +4,6 @@ import React from 'react';
 import ProductComponent from './ProductComponent';
 import firebase from '../database';
 
-require('styles//Products.css');
-
 class ProductsComponent extends React.Component {
   constructor(props) {
     super(props);
@@ -39,7 +37,7 @@ class ProductsComponent extends React.Component {
 
   render() {
     return (
-      <div className="products-component">
+      <div className="row products-component">
         { this.state.products.map((product) => {
           return (
             <ProductComponent key={ product.key } product={ product } />

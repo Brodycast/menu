@@ -4,8 +4,6 @@ import React from 'react';
 import firebase from '../database';
 import OrderComponent from './OrderComponent';
 
-require('styles//Orders.css');
-
 class OrdersComponent extends React.Component {
   constructor(props) {
     super(props);
@@ -39,15 +37,21 @@ class OrdersComponent extends React.Component {
 
   render() {
     return (
-      <div className="orders-component">
-        { this.state.orders
-          .filter((order) => order.user === firebase.auth().currentUser.email)
-          .filter((order) => order.status === 'ordered')
-          .map((order) => {
-          return(
-            <OrderComponent order={ order } key={ order.key }/>
-          );
-        }) }
+      <div className="row">
+        <div className="col s12">
+          <div className="card orders-component">
+            <div className="collection">
+            { this.state.orders
+              .filter((order) => order.user === firebase.auth().currentUser.email)
+              .filter((order) => order.status === 'ordered')
+              .map((order) => {
+              return(
+                <OrderComponent order={ order } key={ order.key }/>
+              );
+              }) }
+            </div>
+          </div>
+        </div>
       </div>
     );
   }

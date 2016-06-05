@@ -7,9 +7,10 @@ require('styles//Order.css');
 class OrderComponent extends React.Component {
   render() {
     return (
-      <div className="order-component">
+      <a href="#" className="collection-item order-component">
         { this.props.order.description }
-      </div>
+        <span className="new badge"> 15s </span>
+      </a>
     );
   }
 }

@@ -11,10 +11,14 @@ class HeaderComponent extends React.Component {
   }
   render() {
     return (
-      <header class="header">
-        <h1 class="header__title">{ this.props.user.displayName }</h1>
-          <button onClick={ this.handleLogout.bind(this) }>Logout</button>
-      </header>
+      <nav>
+      <div className="header nav-wrapper">
+        <a href="#" className="brand-logo">{ this.props.user.displayName }</a>
+        <ul id="nav-mobile" className="right hide-on-med-and-down">
+          <li><a onClick={ this.handleLogout.bind(this) }ref="#">LogOut</a></li>
+        </ul>
+      </div>
+    </nav>
     );
   }
 }
