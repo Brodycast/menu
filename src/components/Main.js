@@ -54,7 +54,7 @@ class AppComponent extends React.Component {
     } else {
       return (
         <div className="row center">
-          <img src={ logo }/>
+          <img src={ logo } width="350" height="300"/>
           <div>
             <button className="btn blue" onClick={ this.handleLogin.bind(this) }>Entre com o Facebook</button>
           </div>
