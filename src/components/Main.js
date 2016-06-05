@@ -51,8 +51,10 @@ class AppComponent extends React.Component {
       );
     } else {
       return (
-        <div>
-          <button onClick={ this.handleLogin.bind(this) }>Login com FB</button>
+        <div className="container">
+          <div>
+            <button className="btn blue center" onClick={ this.handleLogin.bind(this) }>Entre com o Facebook</button>
+          </div>
         </div>
       );
     }

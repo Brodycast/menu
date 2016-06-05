@@ -15,7 +15,7 @@ class HeaderComponent extends React.Component {
       <div className="header nav-wrapper">
         <a href="#" className="brand-logo">{ this.props.user.displayName }</a>
         <ul id="nav-mobile" className="right hide-on-med-and-down">
-          <li><a onClick={ this.handleLogout.bind(this) }ref="#">LogOut</a></li>
+          <li><a onClick={ this.handleLogout.bind(this) }ref="#">Sair</a></li>
         </ul>
       </div>
     </nav>

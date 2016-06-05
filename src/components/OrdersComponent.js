@@ -11,7 +11,7 @@ class OrdersComponent extends React.Component {
       orders: []
     };
   }
-  
+
   componentWillMount() {
     this.orderRef = firebase.database().ref('order');
     this.listenForOrders();
@@ -39,6 +39,7 @@ class OrdersComponent extends React.Component {
     return (
       <div className="row">
         <div className="col s12">
+        <h4>Lista de pedidos</h4>
           <div className="card orders-component">
             <div className="collection">
             { this.state.orders

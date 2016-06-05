@@ -27,7 +27,7 @@ class ProductComponent extends React.Component {
 
   render() {
     return (
-      <div className="col s6 product-component">
+      <div className="col s12 m6 product-component">
         <div className="card medium">
           <div className="card-image waves-effect waves-block waves-light">
             <img className="activator"
@@ -41,7 +41,7 @@ class ProductComponent extends React.Component {
             </span>
             <p>
               <a href="#">
-                { this.props.product.price }
+                R$ { this.props.product.price }
               </a>
             </p>
           </div>
@@ -53,7 +53,7 @@ class ProductComponent extends React.Component {
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
-            <a href="#" onClick={ this.handleOrder.bind(this) }>
+            <a href="#" className="waves-effect green waves-light btn" onClick={ this.handleOrder.bind(this) }>
               Pedir
             </a>
           </div>
