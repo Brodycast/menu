@@ -9,6 +9,8 @@ import ProductsComponent from './ProductsComponent';
 
 const provider = new firebase.auth.FacebookAuthProvider();
 
+var logo = require('../images/logo.png')
+
 class AppComponent extends React.Component {
   constructor(props) {
     super(props);
@@ -52,7 +54,7 @@ class AppComponent extends React.Component {
     } else {
       return (
         <div className="row center">
-          <img src="images/logo.png"/>
+          <img src={ logo }/>
           <div>
             <button className="btn blue" onClick={ this.handleLogin.bind(this) }>Entre com o Facebook</button>
           </div>
