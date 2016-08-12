@@ -47,7 +47,6 @@ class AppComponent extends React.Component {
       return (
         <div className="index">
           <HeaderComponent user={ this.state.user }/>
-          <OrdersComponent user={ this.state.user }/>
           <ProductsComponent />
         </div>
       );

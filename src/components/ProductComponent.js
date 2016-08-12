@@ -27,8 +27,8 @@ class ProductComponent extends React.Component {
 
   render() {
     return (
-      <div className="col s12 m6 product-component">
-        <div className="card medium">
+      <div className="col s12 m12 product-component">
+        <div className="card medium z-depth-1">
           <div className="card-image waves-effect waves-block waves-light">
             <img className="activator"
               src={ this.props.product.photo }
@@ -37,26 +37,16 @@ class ProductComponent extends React.Component {
           <div className="card-content">
             <span className="card-title activator grey-text text-darken-4">
               { this.props.product.description }
-              <i className="material-icons right">more_vert</i>
             </span>
-            <p>
+            <p className="card-price">
               <a href="#">
                 R$ { this.props.product.price }
               </a>
             </p>
           </div>
-          <div className="card-reveal">
-            <span className="card-title grey-text text-darken-4">
-              { this.props.product.description }
-              <i className="material-icons right">close</i>
-            </span>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <a href="#" className="waves-effect green waves-light btn" onClick={ this.handleOrder.bind(this) }>
-              Pedir
-            </a>
-          </div>
+          <a href="#" className="waves-effect btn-sobre waves-light btn z-depth-0" onClick={ this.handleOrder.bind(this) }>
+            Sobre
+          </a>
         </div>
       </div>
     );
