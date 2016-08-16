@@ -57,7 +57,7 @@ class AppComponent extends React.Component {
         } else {
             return (
                 <div className="row center">
-                <img src={ logo }/>
+                <img src={ logo } width="300" height="300" />
                 <div>
                 <button className="waves-effect waves-light btn-large btn blue darken-4" onClick={ this.handleLoginFacebook.bind(this) }><i className="large material-icons">perm_identity</i> Entre com o Facebook</button>
                 <button className="waves-effect waves-light btn-large btn red" onClick={ this.handleLoginGoogle.bind(this) }><i className="large material-icons">perm_identity</i> Entre com o Google</button>
