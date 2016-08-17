@@ -93,5 +93,10 @@ nav{
 }
 
 .background-gradient {
-    background-image: linear-gradient(to bottom, #f5921f, #bf1e2d);
+    background: -webkit-gradient(to bottom, #f5921f, #bf1e2d);
+    background: -webkit-linear-gradient(#f5921f, #bf1e2d);
+    background: -moz-linear-gradient(#f5921f, #bf1e2d);
+    background: -o-linear-gradient(#f5921f, #bf1e2d);
+    background: -ms-linear-gradient(#f5921f, #bf1e2d);
+    background: linear-gradient(#f5921f, #bf1e2d);
 }
