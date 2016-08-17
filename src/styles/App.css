@@ -73,10 +73,8 @@ nav{
 .btn-login-facebook {
   background-color: #fff !important;
     color: #0D47A1;
-    /* border: 2px solid #fff; */
     font-weight: bold;
     font-size: 12px;
-    /* border-radius: 50px; */
     border-radius: 50px;
     margin-right: 10px;
     margin-left: 10px;
@@ -84,8 +82,7 @@ nav{
 }
 
 .btn-login-google {
-  background-color: #fff !important;
-    /* border: 2px solid #fff; */
+    background-color: #fff !important;
     font-size: 12px;
     font-weight: bold;
     border-radius: 50px;
@@ -93,4 +90,8 @@ nav{
     margin-right: 10px;
     padding: 0 3em;
     color: red;
+}
+
+.background-gradient {
+    background-image: linear-gradient(to bottom, #f5921f, #bf1e2d);
 }
