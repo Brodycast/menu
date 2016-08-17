@@ -59,7 +59,7 @@ class AppComponent extends React.Component {
         } else {
             return (
                 <div className="row center background-gradient">
-                <img src={ logo } class="image-logo" />
+                <img src={ logo } class="image-logo" width="200" height="200"/>
                   <div>
                     <button className="waves-effect waves-light btn btn-login-facebook" onClick={ this.handleLoginFacebook.bind(this) }><FontAwesome name='facebook' /> Facebook</button>
                     <button className="waves-effect waves-light btn btn-login-google" onClick={ this.handleLoginGoogle.bind(this) }><FontAwesome name='google' /> Google</button>
