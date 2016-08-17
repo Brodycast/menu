@@ -67,6 +67,7 @@
     "materialize-css": "^0.97.6",
     "normalize.css": "^4.0.0",
     "react": "^15.0.0",
-    "react-dom": "^15.0.0"
+    "react-dom": "^15.0.0",
+    "react-fontawesome": "^1.1.0"
   }
 }

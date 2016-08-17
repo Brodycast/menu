@@ -6,6 +6,8 @@ import firebase from '../database';
 import HeaderComponent from './HeaderComponent';
 import OrdersComponent from './OrdersComponent';
 import ProductsComponent from './ProductsComponent';
+import FontAwesome from 'react-fontawesome';
+
 
 const facebookProvider = new firebase.auth.FacebookAuthProvider();
 const googleProvider = new firebase.auth.GoogleAuthProvider();
@@ -59,8 +61,8 @@ class AppComponent extends React.Component {
                 <div className="row center background-gradient">
                 <img src={ logo } class="image-logo" />
                   <div>
-                    <button className="waves-effect waves-light btn btn-login-facebook" onClick={ this.handleLoginFacebook.bind(this) }><i className="fa fa-facebook-official" aria-hidden="true"></i> Facebook</button>
-                    <button className="waves-effect waves-light btn btn-login-google" onClick={ this.handleLoginGoogle.bind(this) }><i className="fa fa-google" aria-hidden="true"></i> Google</button>
+                    <button className="waves-effect waves-light btn btn-login-facebook" onClick={ this.handleLoginFacebook.bind(this) }><FontAwesome name='facebook-official' /> Facebook</button>
+                    <button className="waves-effect waves-light btn btn-login-google" onClick={ this.handleLoginGoogle.bind(this) }><FontAwesome name='google' /> Google</button>
                   </div>
                 </div>
             );
