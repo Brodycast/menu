@@ -95,3 +95,9 @@ nav{
 .background-gradient {
     background-image: linear-gradient(to bottom, #f5921f, #bf1e2d);
 }
+
+.image-logo {
+  display: block;
+  margin: auto;
+  width: 50%;
+}
