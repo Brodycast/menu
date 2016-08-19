@@ -3,16 +3,14 @@ require('styles/App.css');
 
 import React from 'react';
 import firebase from '../database';
+import config from '../config';
 import HeaderComponent from './HeaderComponent';
 import OrdersComponent from './OrdersComponent';
 import ProductsComponent from './ProductsComponent';
 import FontAwesome from 'react-fontawesome';
 
-
 const facebookProvider = new firebase.auth.FacebookAuthProvider();
 const googleProvider = new firebase.auth.GoogleAuthProvider();
-
-var logo = require('../images/logo.png')
 
 class AppComponent extends React.Component {
     constructor(props) {
@@ -34,13 +32,7 @@ class AppComponent extends React.Component {
                 });
             }
         });
-        firebase.auth().getRedirectResult().then((result) => {
-            if (result.credential) {
-                this.setState({
-                    user: result.user
-                });
-            }
-        });
+        firebase.auth().getRedirectResult();
     }
     handleLoginFacebook() {
         firebase.auth().signInWithRedirect(facebookProvider);
@@ -49,28 +41,36 @@ class AppComponent extends React.Component {
         firebase.auth().signInWithRedirect(googleProvider);
     }
     render() {
-        if (this.state.user) {
+        document.title = 'config.placeName';
+        if (firebase.auth().currentUser) {
             return (
                 <div className="index">
-                <HeaderComponent user={ this.state.user }/>
+                <HeaderComponent/>
                 <ProductsComponent />
                 </div>
             );
         } else {
             return (
-                <div className="row center background-gradient">
-                <img src={ logo } class="image-logo" width="200" height="200"/>
-                  <div>
-                    <button className="waves-effect waves-light btn btn-login-facebook" onClick={ this.handleLoginFacebook.bind(this) }><FontAwesome name='facebook' /> Facebook</button>
-                    <button className="waves-effect waves-light btn btn-login-google" onClick={ this.handleLoginGoogle.bind(this) }><FontAwesome name='google' /> Google</button>
-                  </div>
+                <div id="app" className="row center">
+                    <img src={ config.logo } alt={ config.placeName } class="image-logo" width="200" height="200"/>
+                    <div>
+                        <button className="waves-effect waves-light btn btn-login-facebook"
+                                onClick={ this.handleLoginFacebook.bind(this) }>
+                            <FontAwesome name='facebook'/>
+                            Facebook
+                        </button>
+                        <button className="waves-effect waves-light btn btn-login-google"
+                                onClick={ this.handleLoginGoogle.bind(this) }>
+                            <FontAwesome name='google'/>
+                            Google
+                        </button>
+                    </div>
                 </div>
             );
         }
     }
 }
 
-AppComponent.defaultProps = {
-};
+AppComponent.defaultProps = {};
 
 export default AppComponent;

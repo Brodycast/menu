@@ -1,11 +1,6 @@
 import firebase from 'firebase';
+import config from './config';
 
-var config = {
-  apiKey: 'AIzaSyC0S74m9BXbVPYRjOUZXmwZneecdFJuhCc',
-  authDomain: 'brodycast.firebaseapp.com',
-  databaseURL: 'https://brodycast.firebaseio.com',
-  storageBucket: 'brodycast.appspot.com'
-};
-firebase.initializeApp(config);
+firebase.initializeApp(config.firebase);
 
 export default firebase;
