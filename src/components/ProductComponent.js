@@ -40,7 +40,7 @@ class ProductComponent extends React.Component {
             </span>
             <p className="card-price">
               <a href="#">
-                R$ { this.props.product.price }
+                R$ { this.props.product.price.toFixed(2) }
               </a>
             </p>
           </div>

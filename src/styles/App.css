@@ -8,13 +8,12 @@ html {
 }
 body {
   min-height: 100%;
-  background: -webkit-gradient(to bottom, #f5921f, #bf1e2d);
-  background: -webkit-linear-gradient(to bottom, #f5921f, #bf1e2d);
-  background: -moz-linear-gradient(to bottom, #f5921f, #bf1e2d);
-  background: -o-linear-gradient(to bottom, #f5921f, #bf1e2d);
-  background: -ms-linear-gradient(to bottom, #f5921f, #bf1e2d);
-  background: linear-gradient(to bottom, #f5921f, #bf1e2d);
-  background-attachment: fixed;
+}
+#app {
+  background-color: #742268;
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
 }
 .row.products-component{
     margin-top: 10px;
@@ -69,10 +68,13 @@ body {
     height: 110px;
 }
 nav{
-    background-color: #ff6f00;
+    background-color: #742268;
 }
 .btn-sobre{
-    background-color: #f4511e;
+    background-color: #742268;
+}
+.btn-sobre:hover{
+    background-color: #ff6f00;
 }
 
 .btn-login-facebook {
@@ -95,4 +97,9 @@ nav{
     margin-right: 10px;
     padding: 0 3em;
     color: red;
+}
+
+#logo {
+    margin-top: 110px;
+    margin-bottom: 30px;
 }

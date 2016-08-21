@@ -14,18 +14,9 @@ class HeaderComponent extends React.Component {
     return (
       <nav>
       <div className="header nav-wrapper">
-
-        <ul id="nav-mobile" className="left">
-            <li>
-                <img src={ config.logo } width="60px" height="60px"/>
-            </li>
-            <li>
-                { config.placeName }
-            </li>
-
-        </ul>
+        <a href="#" className="brand-logo center">{ config.placeName }</a>
         <ul id="nav-mobile" className="right">
-          <li><span class="hide-on-med-and-down">Bem vindo(a) {firebase.auth().currentUser.displayName}</span></li>
+          <li className="hide-on-med-and-down"><span>Bem vindo(a) {firebase.auth().currentUser.displayName}</span></li>
           <li><a onClick={ () => { this.handleLogout() } } ref="#">Sair</a></li>
         </ul>
       </div>

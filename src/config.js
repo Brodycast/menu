@@ -1,12 +1,12 @@
 const config = {
-    firebase: {
-      apiKey: 'AIzaSyC0S74m9BXbVPYRjOUZXmwZneecdFJuhCc',
-      authDomain: 'brodycast.firebaseapp.com',
-      databaseURL: 'https://brodycast.firebaseio.com',
-      storageBucket: 'brodycast.appspot.com'
+  firebase: {
+    apiKey: 'AIzaSyDlSVWv-BAeqCS1jzHyQC7EBQQPuZ2-gE8',
+    authDomain: 'chiquitabacana-794d4.firebaseapp.com',
+    databaseURL: 'https://chiquitabacana-794d4.firebaseio.com',
+    storageBucket: 'chiquitabacana-794d4.appspot.com',
   },
   logo: require('./images/logo.png'),
-  placeName: 'Restaurante BrodyCast'
+  placeName: 'Chiquita Bacana'
 };
 
 export default config;
