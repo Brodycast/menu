@@ -10,7 +10,7 @@ body {
   min-height: 100%;
 }
 #app {
-  background-color: #742268;
+  background-color: #ff3333;
   position: absolute;
   min-width: 100%;
   min-height: 100%;
@@ -68,10 +68,10 @@ body {
     height: 110px;
 }
 nav{
-    background-color: #742268;
+    background-color: #ff3333;
 }
 .btn-sobre{
-    background-color: #742268;
+    background-color: #ff3333;
 }
 .btn-sobre:hover{
     background-color: #ff6f00;
