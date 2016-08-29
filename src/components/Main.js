@@ -52,7 +52,7 @@ class AppComponent extends React.Component {
         } else {
             return (
                 <div id="app" className="row center">
-                    <img id="logo" src={ config.logo } alt={ config.placeName } className="image-logo" width="200" height="200"/>
+                    <img id="logo" src={ config.logo } alt={ config.placeName } className="image-logo" width="200"/>
                     <div>
                         <button className="waves-effect waves-light btn btn-login-facebook"
                                 onClick={ this.handleLoginFacebook.bind(this) }>

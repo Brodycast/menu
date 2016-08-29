@@ -6,11 +6,7 @@ html {
   top: 0;
   left: 0;
 }
-body {
-  min-height: 100%;
-}
 #app {
-  background-color: #ff3333;
   position: absolute;
   min-width: 100%;
   min-height: 100%;
