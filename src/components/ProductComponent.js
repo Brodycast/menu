@@ -38,15 +38,12 @@ class ProductComponent extends React.Component {
             <span className="card-title activator grey-text text-darken-4">
               { this.props.product.description }
             </span>
-            <p className="card-price">
+            <span className="card-price">
               <a href="#">
                 { this.props.product.price }
               </a>
-            </p>
+            </span>
           </div>
-          <a href="#" className="waves-effect btn-sobre waves-light btn z-depth-0" onClick={ this.handleOrder.bind(this) }>
-            Sobre
-          </a>
         </div>
       </div>
     );
